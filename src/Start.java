@@ -6,13 +6,17 @@ public class Start extends JFrame {
 
 	Container contentPane;
 	
+	int Width = 230;
+	int Height = 170;
+	
 	Start () {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		contentPane = this.getContentPane();
 		
-		setBounds(500,500,250,180);
+		Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+		this.setBounds((int)((screenSize.getWidth()-Width)*0.5), (int)((screenSize.getHeight()-Height)*0.5), Width, Height);
 		
 		setLayout(null);
 		
@@ -37,7 +41,7 @@ public class Start extends JFrame {
 		contentPane.add(jtfPORT);
 		
 		JButton jbtcon = new JButton("START");
-		jbtcon.setBounds(60, 96, 120, 23);
+		jbtcon.setBounds(50, 96, 120, 23);
 		jbtcon.setFont(new Font("º–∑¢≈È", Font.PLAIN, 20));
 		contentPane.add(jbtcon);
 		

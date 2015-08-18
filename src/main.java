@@ -1,10 +1,16 @@
+import Frame.*;
+import Socket.SocketServer;
+import Socket.*
+;
 
 public class main {
-
+	private Server serverSkt;
+	private static main mm;
 	public static void main(String[] args) {
-		
-		//Start art = new Start () ;
 		ServerFrame ff = new ServerFrame() ;
+		
+
 	}
+	
 
 }
